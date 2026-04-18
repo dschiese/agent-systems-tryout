@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage{relsize}
+\usepackage{amssymb}
+\usepackage{geometry}
+
+% Reduce margins
+\geometry{
+    a4paper,
+    margin=1in % You can adjust this value (e.g., 0.75in, 2cm, etc.)
+}
+
+\newcommand{\subtitlerelsize}{1} %relative size: integer value
+\newcommand{\subtitlelinesep}{0.2em} %line separation: a LaTeX length
+
+\title{Evaluationsbogen Agenten-Frameworks}
+\date{}
+
+\begin{document}
+    
+\maketitle
+    
+\vspace{-1.5cm}
+
+\begin{center}
+    \textbf{Framework:} y
+    \textbf{Testzeitraum:} x Tage
+\end{center}
+
+\section*{Teil A}
+
+\newcommand{\evalquestion}[2]{
+    #1
+    \begin{flushleft}
+        \ifnum#2=1 $\boxtimes$ Stimme gar nicht zu \else $\square$ Stimme gar nicht zu \fi \quad
+        \ifnum#2=2 $\boxtimes$ Eher nicht \else $\square$ Eher nicht \fi \quad
+        \ifnum#2=3 $\boxtimes$ Neutral \else $\square$ Neutral \fi \quad
+        \ifnum#2=4 $\boxtimes$ Eher ja \else $\square$ Eher ja \fi \quad
+        \ifnum#2=5 $\boxtimes$ Stimme voll zu \else $\square$ Stimme voll zu \fi
+    \end{flushleft}
+}
+
+\noindent
+\evalquestion{1. Ich denke, dass ich dieses Framework häufiger verwenden möchte.}{0}
+
+\noindent
+\evalquestion{2. Ich fand das Framework unnötig komplex.}{0}
+
+\noindent
+\evalquestion{3. Ich dachte, das Framework war einfach zu bedienen.}{0}
+
+\noindent
+\evalquestion{4. Ich denke, dass ich die Unterstützung eines technischen Supports brauche, um dieses Framework nutzen zu können.}{0}
+
+\noindent
+\evalquestion{5. Ich fand, die verschiedenen Funktionen in diesem Framework waren gut integriert.}{0}
+
+\noindent
+\evalquestion{6. Ich dachte, dass dieses Framework nicht konsistent genug war.}{0}
+
+\noindent
+\evalquestion{7. Ich würde mir vorstellen, dass die meisten Informatiker sehr schnell lernen würden, dieses Framework zu benutzen.}{0}
+
+\noindent
+\evalquestion{8. Ich fand dieses Framework sehr umständlich zu benutzen.}{0}
+
+\noindent
+\evalquestion{9. Ich habe mich sehr selbstsicher gefühlt, dieses Framework zu verwenden.}{0}
+
+\noindent
+\evalquestion{10. Ich musste eine Menge lernen, bevor ich mit diesem Framework loslegen konnte.}{0}
+
+\section*{Teil B}
+
+\noindent
+\evalquestion{1. Die technische Dokumentation des Frameworks ist vollständig, aktuell und verständlich.}{0}
+
+\noindent
+2. Welche wichtigen Informationen waren in der Dokumentation nicht oder nur schwer
+auffindbar? \\
+
+\noindent
+3. Gab es Aspekte, die sich im praktischen Einsatz als besonders durchdacht oder
+problematisch erwiesen haben – unabhängig von der Dokumentation? \\
+
+\noindent
+4. Welche Lösungen oder Workarounds mussten implementiert werden, um bestimmte
+Anforderungen oder Anwendungsfälle umzusetzen? \\
+
+\noindent
+5. Gab es Funktionen oder Eigenschaften des Frameworks, die Sie positiv oder negativ
+überrascht haben? \\
+
+\noindent
+\evalquestion{6. Wie gut lässt sich das von Ihnen mit dem Framework erstellte System (auch in kleinerem
+Maßstab) im Nachhinein ändern oder erweitern?}{0}
+
+\noindent
+\evalquestion{7. Wie gut wäre das von Ihnen erstellte System mit vertretbarem Aufwand in einem
+produktiven Szenario einsetzbar?}{0}
+
+\noindent
+8. Wie haben Sie das System hauptsächlich erstellt?
+\begin{flushleft}
+    $\square$ Überwiegend durch Programmierung \quad
+    $\square$ Über Konfiguration (z. B. YAML, JSON) \quad
+    $\square$ Über grafische Benutzeroberfläche (GUI) \quad
+\end{flushleft}
+
+\noindent
+9. Wie schätzen Sie den Aufwand und die Flexibilität dieser Art der Systemerstellung
+( siehe Frage 8 ) ein?
+
+
+
+\end{document}
