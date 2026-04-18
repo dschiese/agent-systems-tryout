@@ -1,0 +1,11 @@
+Given the errornous GitHub repository '{path_to_repository}' that is locally stored, you should fix the problem described in the problem statement that is as follows:
+
+{Problem_statement}
+
+To test the changes, don't create or adjust any test files. 
+
+Further repository Data:
+instance_id = {instance_id}
+FAIL_TO_PASS = {FAIL_TO_PASS}
+PASS_TO_PASS = {PASS_TO_PASS}
+repoDir = {path_to_repository}
